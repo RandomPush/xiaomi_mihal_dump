@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- /*kFeatureEntrance:                                                        -->
+<!-- * BIT(0): cabc feature enable/disable                                      -->
+<!-- * BIT(1): fps switch enable/disable                                        -->
+<!-- * BIT(2): HBM enable/disable                                               -->
+<!-- *                                                                          -->
+<!-- * kCABC : CABC level                                                       -->
+<!-- * kFPS  ：Set the refresh rate                                             -->
+<!-- */                                                                         -->
+<!-- enum class FeatureFlag : int32_t {                                         -->
+<!--     kFeatureEntrance = 0,                                                  -->
+<!--     kCABC,                                                                 -->
+<!--     kFPS,                                                                  -->
+<!-- 	 kFeatureMax                                                             -->
+<!-- };                                                                         -->
+<!--                                                                            -->
+<!--                                                                            -->
+<!-- /*mLayerFlag:                                                              -->
+<!-- * BIT(0): cabc feature enable/disable                                      -->
+<!-- * BIT(1): fps switch enable/disable                                        -->
+<!-- * BIT(2): HBM enable/disable                                               -->
+<!-- *                                                                          -->
+<!-- * mLayerCABClevel : Set the cabc level with the activity.                  -->
+<!-- * mLayerFPS  ：Set the fps level with the activity.                        -->
+<!-- */                                                                         -->
+<!--                                                                            -->
+<!-- enum class LayerFlag : int32_t{                                            -->
+<!-- 	mLayerFlag,                                                             -->
+<!-- 	mLayerCABClevel,                                                        -->
+<!-- 	mLayerFPS,                                                              -->
+<!-- 	mLayerMax                                                               -->
+<!-- };                                                                         -->
+<!--                                                                            -->
+<!-- /*mLayType:                                                                -->
+<!-- * BIT(0): View                                                             -->
+<!-- * BIT(1): SurfaceView                                                      -->
+<!-- * BIT(2): TextureView                                                      -->
+<!-- *                                                                          -->
+<!-- * mSceneFlag : the scene use the featureflag,decide enable or disable.     -->
+<!-- * mSceneCABClevel  ：Set the cabc level in this scene of activity.         -->
+<!-- * mSceneFPS : Set the fps in this scene of activity.                       -->
+<!-- */                                                                         -->
+<!--                                                                            -->
+<!-- enum class LayerSceneFlag : int32_t{                                       -->
+<!-- 	mLayerType = 0,                                                           -->
+<!-- 	mSceneFlag,                                                             -->
+<!-- 	mSceneCABClevel,                                                        -->
+<!-- 	mSceneFPS,                                                              -->
+<!-- 	mSceneMax                                                               -->
+<!-- };                                                                         -->
+<!-- <FeatureFlag>kFeatureEntrance,kCABC,kFPS,0x0,0x0,0x0</FeatureFlag> -->
+<!-- <layername>com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity</layername> -->
+<!-- <sceneflag>mLayType,mSceneFlag,mSceneCABClevel,mSceneFPS,0x0,0x0</sceneflag> -->
+<!-- <layerflag>mLayerFlag,mLayerCABClevel,mLayerFPS,0x0,0x0,0x0</layerflag> -->
+<midisplayservice>
+    <date>20220314</date>
+    <FeatureFlag>0xFFFF,0x1,0x3C,0x2,0x3,0x4</FeatureFlag>
+    <layername>com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0003,0x2,0x3C,0x0,0x0,0x0</layerflag>
+    <layername>com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.search.activity.SearchResultActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0003,0x4,0x78,0x0,0x0,0x0</layerflag>
+    <layername>com.android.camera/com.android.camera.Camera</layername>
+    <sceneflag>0x0004,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0005,0x3,0x0,0x0,0x0,0x0</layerflag>
+    <layername>tv.danmaku.bili/tv.danmaku.bili.ui.video.VideoDetailsActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x3C,0x0,0x0,0x0</layerflag>
+    <layername>tv.danmaku.bili/tv.danmaku.bili.MainActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>tv.danmaku.bili/com.mall.ui.page.base.MallFragmentLoaderActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>tv.danmaku.bili/tv.danmaku.bili.ui.webview.MWebActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>tv.danmaku.bili/com.bilibili.bplus.im.communication.HomeCommunicationActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>tv.danmaku.bili/tv.danmaku.bili.ui.favorite.FavoriteBoxActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>com.xunmeng.pinduoduo/com.xunmeng.pinduoduo.activity.NewPageActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>com.qiyi.video/com.qiyi.video.WelcomeActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>com.smile.gifmaker/com.yxcorp.plugin.search.SearchActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>com.tencent.qqlive/com.tencent.qqlive.ona.activity.SplashHomeActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>com.tencent.qqlive/com.tencent.qqlive.ona.activity.SearchPagerActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>com.ss.android.article.video/com.ss.android.article.video.activity.SplashActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>com.ximalaya.ting.android/com.ximalaya.ting.android.host.activity.MainActivity</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>com.miui.video/com.miui.video.Launcher1</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+    <layername>com.youku.phone/com.youku.v2.HomePageEntry</layername>
+    <sceneflag>0x0001,0x0,0x0,0x0,0x0,0x0</sceneflag>
+    <layerflag>0x0002,0x0,0x78,0x0,0x0,0x0</layerflag>
+</midisplayservice>
